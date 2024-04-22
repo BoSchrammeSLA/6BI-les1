@@ -20,3 +20,37 @@ uitbreiding
 - als je hovert over de elementen, wordt de achtergrondkleur rood
 - de pagina “Over Ons” komt na contact
 */
+
+nav a {
+  background-color: yellow;
+  padding: 20px;
+  color: black;
+  text-decoration-line: none;
+  text-transform: uppercase;
+}
+
+a#item {
+  order: 2;
+}
+
+a:hover {
+  background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+  nav a {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  a {
+    flex: 25%;
+  }
+}
